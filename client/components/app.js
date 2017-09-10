@@ -19,6 +19,10 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators(actionCreators, dispatch);
 }
 
+// Instead of having to pass down props thru every level,
+// connect will inject the data from our store into whatever level
+// component you need 
+
 const App = connect(mapStateToProps, mapDispatchToProps)(Main);
 
 export default App;
