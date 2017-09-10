@@ -31,6 +31,10 @@ If you're not, you can access these files on unpkg, download them, or point your
 
 ## Travelgram (built with react,redux, and express)
 
+
+[logo]: images/landing.png "Travelgram"
+[logo]: images/single.png "Single photo page"
+
 `npm init `
 
 to setup  the json file and add all of the necessary dependencies
@@ -166,3 +170,42 @@ export default comments;
 
 ```
 
+### Actions
+
+Actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using `store.dispatch() ` .
+
+```
+//action creators are pure functions
+//increment
+export function increment(index) {
+    return {
+        //actions are just objects that have a two things, a type and information that your action needs
+        type: 'INCREMENT_LIKES', 
+        // ES6, otherwise index: index
+        index
+    }
+}
+
+//add comment
+export function addComment(postId, author, comment) {
+    return {
+        type: 'ADD_COMMENT',
+        postId,
+        author,
+        comment
+    }
+}
+
+//remove comment 
+// i is the index of the specific comment
+export function removeComment(postId, i) {
+    return {
+        type: 'REMOVE_COMMENT',
+        i,
+        postId
+    }
+}
+
+```
+
+Stores, reducers , and actions are the fundamental building blocks for successfully integrating redux into your application. 
