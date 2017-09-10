@@ -32,6 +32,8 @@ If you're not, you can access these files on unpkg, download them, or point your
 ## Travelgram (built with react,redux, and express)
 
 ![alt text](images/landing.png "Travelgram!")
+
+### Single Page
 ![alt text](images/single.png "Single page!")
 
 `npm init `
@@ -208,3 +210,9 @@ export function removeComment(postId, i) {
 ```
 
 Stores, reducers , and actions are the fundamental building blocks for successfully integrating redux into your application. 
+
+## Resources
+
+[Redux Docs](http://redux.js.org/)
+[Wes' Reduxagram Repo](https://github.com/wesbos/Learn-Redux-Starter-Files/tree/master/learn-redux)
+[Wes' Course](http://wesbos.com/learn-redux/)
