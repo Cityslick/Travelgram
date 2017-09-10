@@ -31,9 +31,8 @@ If you're not, you can access these files on unpkg, download them, or point your
 
 ## Travelgram (built with react,redux, and express)
 
-
-[logo]: images/landing.png "Travelgram"
-[logo]: images/single.png "Single photo page"
+![alt text](images/landing.png "Travelgram!")
+![alt text](images/single.png "Single page!")
 
 `npm init `
 
