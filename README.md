@@ -83,7 +83,9 @@ The store looks for changes in state, and reducers are means of doing so.
 
  Reducers are pure functions that return changes in state. In our particular application we had two main reducer functions. These functions manipulated the posts and comments state.
 
- ` // a reducer takes in two things:
+``` 
+
+// a reducer takes in two things:
 // 1. the action (what happened)
 // 2. a copy/snapshot of current state
 
@@ -114,9 +116,13 @@ function posts(state = [], action) {
     return state;
 }
 
-export default posts; `
+export default posts; 
 
-` // a reducer takes in two things:
+```
+
+```
+
+// a reducer takes in two things:
 // 1. the action (what happened)
 // 2. a copy/snapshot of current state
 
@@ -156,78 +162,7 @@ function comments(state = [], action) {
     return state;
 }
 
-export default comments; `
+export default comments; 
 
+```
 
-
-
-
-
-To view the default files you will get with your new React Native app, check out the Example-App folder in this tutorial's repository.
-
-Here is a helpful diagram to explain how React Native is different from React (the key difference being that, as React Native does not run in the browser, there is no browser DOM):
-
-
-
-Code Examples
-
-The following code examples are taken from a tutorial published by Traversy Media on YouTube: React Native Crash Course YouTube Video
-
-Here are a few examples of code in React Native:
-
-First, this is the basic boilerplate which the programmer uses to show information, always using one component, which holds the rest of the components.
-
-    import {AppRegistry, Text, View} from 'react-native'
-
-    export default class newAppName extends Component {
-      render(){
-        return(
-          <View>
-            <Text>Hello, World! This is a React Native App!!!!!!</Text>
-          </View>
-        );
-      }
-    }
-Second, the Programmer uses props and state (just like in React). Props are set by the parent and live during the lifetime of the Component. We use state for the data that is going to change. We define state in the constractor, and everytime we have to change the infotmation we set the State again.
-
-     export default class newAppName extends Component {
-       constructor(){
-         super();
-         this.state = {
-            name: 'Militsa'
-         }
-        }
-
-      render(){
-        return(
-          <View>
-            <Text>{this.state.name}</Text>
-            </View>        
-          );
-        }
-      }
-Resources
-
-To Read
-
-React Native Official Site
-
-Facebook's Tutorial on React Native
-
-React Documentation on Android Setup
-
-2015 Article About the Origins of React Native
-
-To Watch
-
-React Native Crash Course YouTube Video
-
-Video on Android SDK & AVD Setup For React Native
-
-To Download
-
-NPM Page for React-Native-Cli Package
-
-Download Java
-
-Download Android Studio
