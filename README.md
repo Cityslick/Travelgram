@@ -214,5 +214,4 @@ Stores, reducers , and actions are the fundamental building blocks for successfu
 ## Resources
 
 * [Redux Docs](http://redux.js.org/)
-* [Wes' Reduxagram Repo](https://github.com/wesbos/Learn-Redux-Starter-Files/tree/master/learn-redux)
-* [Wes' Course](http://wesbos.com/learn-redux/)
+
